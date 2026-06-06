@@ -1,0 +1,133 @@
+\documentclass[11pt]{article}
+
+% ---- Page ----
+\usepackage[a4paper,margin=1in]{geometry}
+
+% ---- Fonts (xelatex) ----
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{TeX Gyre Pagella}
+\setCJKmainfont{FandolSong-Regular.otf}[BoldFont=FandolSong-Bold.otf]
+
+% ---- Section headers: small-caps, bold, with a full-width rule ----
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\vspace{-4pt}\rule{\textwidth}{0.6pt}]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% ---- Lists ----
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.2em,itemsep=2pt,topsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=3pt,topsep=2pt,parsep=0pt}
+
+% ---- Links ----
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+
+% ---- Helper: left-aligned entry with a right-aligned date ----
+\newcommand{\dated}[2]{\noindent #1\hfill #2\par}
+
+\begin{document}
+
+% ===== Header =====
+\begin{center}
+  {\LARGE\bfseries Han Zheng\ (韩政)}\\[6pt]
+  {\large Assistant Professor}\\[2pt]
+  Bay Area International Business School, Beijing Normal University\\[4pt]
+  \href{mailto:hanzheng211@icloud.com}{hanzheng211@icloud.com}
+  \;\textbar\;
+  \href{https://sites.google.com/view/hanzhenghp}{sites.google.com/view/hanzhenghp}
+\end{center}
+
+% ===== Research Interests =====
+\section{Research Interests}
+International trade; transportation, trade costs, and infrastructure; firm heterogeneity;
+quantitative trade models; trade policy.
+
+% ===== Education =====
+\section{Education}
+\dated{\textbf{Ph.D., Public Policy}, University of Tokyo}{2017--2021}
+\dated{\textbf{M.S., Economics}, University at Buffalo, SUNY}{2015--2017}
+\dated{\textbf{M.S., Economics}, Nagoya University}{2012--2015}
+\dated{\textbf{B.S., Economics}, Tsinghua University}{2008--2012}
+
+% ===== Appointments =====
+\section{Appointments}
+\dated{\textbf{Assistant Professor}, Bay Area International Business School, Beijing Normal University}{2023--present}
+% TODO: confirm BNU appointment start year (assumed 2023)
+
+% ===== Publications =====
+\section{Publications}
+\begin{enumerate}
+  \item \textbf{Han Zheng} and Hongtao Li (2022). ``Transportation Infrastructure and Trade.''
+        \textit{Japan and the World Economy} 64: 101162.
+  \item \textbf{Han Zheng} (2025). ``Price Discrimination in the Transport Industry and the
+        Gains from Trade.'' \textit{The Journal of International Trade \& Economic Development}
+        34(7): 1583--1603. \href{https://doi.org/10.1080/09638199.2025.2471064}{doi:10.1080/09638199.2025.2471064}.
+  \item Kai Sun, \textbf{Han Zheng}, Xin Zhong, and Ding Xiong (2026). ``Cross-Border E-Commerce
+        Comprehensive Pilot Zones and Urban Entrepreneurial Activity: Causal Evidence from
+        Double-Debiased Machine Learning.'' \textit{Journal of Asian Economics} (forthcoming).
+        % TODO: confirm author order on this paper
+\end{enumerate}
+
+% ===== Working Papers =====
+\section{Working Papers}
+\begin{itemize}
+  \item ``Heterogeneous Internal Trade Cost and Implications for Quantitative Trade Models''
+        (revise \& resubmit, \textit{Review of International Economics}).
+  \item ``Nonlinear Pricing in the Transport Industry and the Gains from Trade.''
+  \item ``Trade Policy Uncertainty and Trade in the Short Run: An Empirical Investigation of
+        Reciprocal Tariffs'' (with Kai Sun).
+  \item ``Trade and Attitude: Evidence from the Israeli--Palestinian Conflict'' (with Yanan Wu).
+\end{itemize}
+
+% ===== Works in Progress =====
+\section{Works in Progress}
+\begin{itemize}
+  \item ``Navigating Through the Deglobalization Era?''
+  \item ``Does Institutional Opening Reduce Labor Market Distortion?''
+  \item ``Trump 2.0 Tariff Policy and China Supply-Chain Security.''
+\end{itemize}
+
+% ===== Grants & Funding =====
+\section{Grants \& Funding}
+\dated{Japan Society for the Promotion of Science (JSPS) Grant-in-Aid,
+``Transportation Sector and Its Impact on International Trade'' (¥5,000,000)}{2022--2026}
+
+% ===== Conference Presentations =====
+\section{Conference Presentations}
+\dated{79th Annual Meeting of the Japan Society of International Economics,
+Kyushu University, Fukuoka, Japan}{2020}
+
+% ===== Teaching =====
+\section{Teaching}
+\dated{\textbf{Beijing Normal University} --- instructor}{2023--present}
+% TODO: list BNU courses taught
+\dated{\textbf{University of Tokyo} --- teaching assistant: International Finance;
+International Financial Policy I \& II}{2017--2021}
+\dated{\textbf{University at Buffalo} --- teaching assistant: Industrial Organization;
+Economic Fluctuations; International Economics; Econometrics II}{2015--2017}
+
+% ===== Professional Service =====
+\section{Professional Service}
+Referee: \textit{China Economic Quarterly}; \textit{Economic Modelling};
+\textit{Pacific Economic Review}; \textit{Journal of the Japanese and International Economies}.
+
+% ===== Awards & Honors =====
+\section{Awards \& Honors}
+\begin{itemize}
+  \item Ministry of Education (China) Overseas High-Level Talent Program \hfill 2024
+  \item Excellent Advisor, 1st International Business Graduate Global Supply-Chain Security \&
+        Management Competition (advised first-prize team) \hfill 2024
+  \item University of Tokyo Fellowship \hfill 2017--2021
+  \item Presidential Fellowship, University at Buffalo \hfill 2015--2017
+  \item Nagoya University Foundation Scholarship \hfill 2014
+  \item Japanese Government (JASSO) Scholarship \hfill 2012--2014
+\end{itemize}
+
+% ===== Skills & Languages =====
+\section{Skills \& Languages}
+\textbf{Software:} MATLAB, Python, R, Stata, Mathematica, \LaTeX.\\
+\textbf{Languages:} Mandarin Chinese (native); English (fluent); Japanese (intermediate).
+
+\end{document}
