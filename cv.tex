@@ -21,8 +21,11 @@
 
 % ---- Links ----
 \usepackage[hidelinks]{hyperref}
+\usepackage{xurl}      % let long URLs / DOIs break across lines (no margin overflow)
+\urlstyle{same}        % render URLs in the body serif font, not monospace
 
 \setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}  % avoid overfull lines on long unbreakable runs
 
 % ---- Helper: left-aligned entry with a right-aligned date ----
 \newcommand{\dated}[2]{\noindent #1\hfill #2\par}
@@ -63,7 +66,7 @@ quantitative trade models; trade policy.
         \textit{Japan and the World Economy} 64: 101162.
   \item \textbf{Han Zheng} (2025). ``Price Discrimination in the Transport Industry and the
         Gains from Trade.'' \textit{The Journal of International Trade \& Economic Development}
-        34(7): 1583--1603. \href{https://doi.org/10.1080/09638199.2025.2471064}{doi:10.1080/09638199.2025.2471064}.
+        34(7): 1583--1603. \href{https://doi.org/10.1080/09638199.2025.2471064}{doi.org/\nolinkurl{10.1080/09638199.2025.2471064}}.
   \item Kai Sun, \textbf{Han Zheng}, Xin Zhong, and Ding Xiong (2026). ``Cross-Border E-Commerce
         Comprehensive Pilot Zones and Urban Entrepreneurial Activity: Causal Evidence from
         Double-Debiased Machine Learning.'' \textit{Journal of Asian Economics} (forthcoming).
