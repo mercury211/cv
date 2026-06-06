@@ -20,7 +20,10 @@
 \setlist[enumerate]{leftmargin=1.6em,itemsep=3pt,topsep=2pt,parsep=0pt}
 
 % ---- Links ----
-\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\definecolor{linkcol}{HTML}{1A3E72}   % subtle muted navy for hyperlinks
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=linkcol, linkcolor=linkcol, citecolor=linkcol}
 \usepackage{xurl}      % let long URLs / DOIs break across lines (no margin overflow)
 \urlstyle{same}        % render URLs in the body serif font, not monospace
 
