@@ -30,8 +30,10 @@
 \setlength{\parindent}{0pt}
 \setlength{\emergencystretch}{3em}  % avoid overfull lines on long unbreakable runs
 
-% ---- Helper: left-aligned entry with a right-aligned date ----
-\newcommand{\dated}[2]{\noindent #1\hfill #2\par}
+% ---- Helper: description (wraps) on the left, date in a fixed column on the right ----
+\newcommand{\dated}[2]{\noindent
+  \begin{minipage}[t]{\dimexpr\textwidth-8em\relax}\raggedright #1\end{minipage}%
+  \hfill\makebox[7em][r]{#2}\par\smallskip}
 
 \begin{document}
 
@@ -53,6 +55,7 @@ quantitative trade models; trade policy.
 % ===== Education =====
 \section{Education}
 \dated{\textbf{Ph.D., Public Policy}, University of Tokyo}{2017--2021}
+{\small\hspace*{1.2em}Dissertation: ``Transportation, Infrastructure, and Trade.'' Committee: Kenichi Ueda (chair), Taiji Furusawa, Daisuke Fujii, Konstantin Kucheryavyy, Ryo Kato, Hisashi Yoshikawa.\par}
 \dated{\textbf{M.S., Economics}, University at Buffalo, SUNY}{2015--2017}
 \dated{\textbf{M.S., Economics}, Nagoya University}{2012--2015}
 \dated{\textbf{B.S., Economics}, Tsinghua University}{2008--2012}
@@ -60,6 +63,7 @@ quantitative trade models; trade policy.
 % ===== Appointments =====
 \section{Appointments}
 \dated{\textbf{Assistant Professor}, Bay Area International Business School, Beijing Normal University}{2023--present}
+\dated{\textbf{Research Adjunct}, Hitotsubashi Institute for Advanced Studies, Hitotsubashi University}{2021--2023}
 
 % ===== Publications =====
 \section{Publications}
@@ -93,21 +97,27 @@ quantitative trade models; trade policy.
 
 % ===== Grants & Funding =====
 \section{Grants \& Funding}
-\dated{Japan Society for the Promotion of Science (JSPS) Grant-in-Aid,
+\dated{Grant-in-Aid for Early-Career Scientists, Japan Society for the Promotion of Science (JSPS):
 ``Transportation Sector and Its Impact on International Trade'' (¥5,000,000)}{2022--2026}
 
 % ===== Conference Presentations =====
 \section{Conference Presentations}
-\dated{79th Annual Meeting of the Japan Society of International Economics,
-Kyushu University, Fukuoka, Japan}{2020}
+\textbf{2025:} International Conference on US--China Trade Disputes: Rearchitecture in Globalization and New International Economics.\par\smallskip
+\textbf{2024:} Econometric Society European Winter Meeting; invited talks at Jinan University and Nankai University; 3rd Xiangjiang River Forum in Economics, Finance, and Management for Young Scholars; 中国世界经济学会年会; 第十届中国服务经济与贸易论坛; CCER--NCER 第三届中国经济研讨会.\par\smallskip
+\textbf{2023:} Asian Meeting of the Econometric Society; 第九届香樟经济学年会; 第十届世经学科论坛; 广东经济学会秋季季会; 中国世界经济学会年会.\par\smallskip
+\textbf{2022:} Japan Society of International Economics 81st Annual Meeting; Young Economist Society Annual Meeting (中国青年经济学家联谊会); Asia Pacific Trade Seminars; Japanese Economic Association Spring Meeting, Yokohama; 2nd TWID International Finance Conference.\par\smallskip
+\textbf{2021:} Japan Society of International Economics 80th Annual Meeting; Japanese Economic Association Autumn Meeting.\par\smallskip
+\textbf{2020:} 79th Annual Meeting of the Japan Society of International Economics, Kyushu University, Fukuoka, Japan.
 
 % ===== Teaching =====
 \section{Teaching}
-\dated{\textbf{Beijing Normal University} --- instructor: Machine Learning; Business English}{2023--present}
+\dated{\textbf{Beijing Normal University} --- instructor: Machine Learning (undergraduate); Business English (graduate)}{2023--present}
+\dated{\textbf{University of Tokyo} --- instructor: Practical Session for Statistical Methods}{2020--2021}
 \dated{\textbf{University of Tokyo} --- teaching assistant: International Finance;
 International Financial Policy I \& II}{2017--2021}
 \dated{\textbf{University at Buffalo} --- teaching assistant: Industrial Organization;
 Economic Fluctuations; International Economics; Econometrics II}{2015--2017}
+\dated{\textbf{Tsinghua University} --- teaching assistant: Entrepreneurial Management}{2011}
 
 % ===== Professional Service =====
 \section{Professional Service}
@@ -130,5 +140,11 @@ Referee: \textit{China Economic Quarterly}; \textit{Economic Modelling};
 \section{Skills \& Languages}
 \textbf{Software:} MATLAB, Python, R, Stata, Mathematica, \LaTeX.\\
 \textbf{Languages:} Mandarin Chinese (native); English (fluent); Japanese (intermediate).
+
+% ===== References =====
+\section{References}
+\textbf{Kenichi Ueda} (Ph.D.\ advisor) --- Professor, Graduate School of Economics \& Graduate School of Public Policy, University of Tokyo.\par
+\textbf{Taiji Furusawa} --- Professor, Graduate School of Economics, University of Tokyo.\par
+\textbf{Yoichi Sugita} --- Professor, Faculty of Business and Commerce, Keio University.\par
 
 \end{document}
